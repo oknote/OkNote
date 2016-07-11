@@ -14,7 +14,6 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
 
         startActivity(new Intent(MainActivity.this, DateChooseActivity.class));
-
     }
 
 }

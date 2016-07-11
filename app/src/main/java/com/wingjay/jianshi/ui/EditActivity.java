@@ -45,8 +45,6 @@ public class EditActivity extends InjectActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
-        ButterKnife.bind(this);
-
         final Intent intent = getIntent();
         dateSeconds = intent.getLongExtra(DATE_TIME, 0);
         diaryId = intent.getLongExtra(DIARY_ID, 0);

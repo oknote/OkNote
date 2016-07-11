@@ -29,12 +29,8 @@ public class SettingActivity extends InjectActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
-        ButterKnife.bind(this);
-
         userPrefs = new UserPrefs(SettingActivity.this);
-
         verticalWrite.setChecked(userPrefs.getVerticalWrite());
-
     }
 
     @OnCheckedChanged(R.id.vertical_write)
