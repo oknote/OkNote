@@ -8,16 +8,15 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.prefs.UserPrefs;
-import com.wingjay.jianshi.ui.base.BaseActivity;
-import com.wingjay.jianshi.ui.widget.BgColorPickDialogFragment;
+import com.wingjay.jianshi.storage.UserPrefs;
+import com.wingjay.jianshi.ui.fragment.BgColorPickDialogFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnCheckedChanged;
 import butterknife.OnClick;
 
-public class SettingActivity extends BaseActivity {
+public class SettingActivity extends InjectActivity {
 
     @BindView(R.id.vertical_write) SwitchCompat verticalWrite;
     @BindView(R.id.send_feedback) View sendFeedBack;

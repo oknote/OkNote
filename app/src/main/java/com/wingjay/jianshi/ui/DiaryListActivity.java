@@ -7,18 +7,17 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.data.Diary;
-import com.wingjay.jianshi.db.DbUtil;
+import com.wingjay.jianshi.model.Diary;
+import com.wingjay.jianshi.storage.DbUtil;
 import com.wingjay.jianshi.ui.adapter.DiaryListAdapter;
-import com.wingjay.jianshi.ui.base.BaseActivity;
-import com.wingjay.jianshi.util.ConstantUtil;
+import com.wingjay.jianshi.utils.ConstantUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 
-public class DiaryListActivity extends BaseActivity {
+public class DiaryListActivity extends InjectActivity {
 
     private final List<Diary> diaryList = new ArrayList<>();
     private DiaryListAdapter adapter;

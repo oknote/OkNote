@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.ui.base.BaseActivity;
 
 
 public class MainActivity extends BaseActivity {

@@ -3,7 +3,7 @@
     package="com.wingjay.jianshi" >
 
     <application
-        android:name=".global.JianShiApplication"
+        android:name=".android.JianShiApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -39,7 +39,7 @@
             android:exported="false" >
         </activity>
         <activity
-            android:name=".ui.base.BaseActivity"
+            android:name=".ui.BaseActivity"
             android:label="@string/title_activity_base"
             android:exported="false" >
         </activity>

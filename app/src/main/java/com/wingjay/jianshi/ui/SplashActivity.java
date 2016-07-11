@@ -6,7 +6,6 @@ import android.os.Message;
 import android.os.Bundle;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.ui.base.BaseActivity;
 
 public class SplashActivity extends BaseActivity {
 

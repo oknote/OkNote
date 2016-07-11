@@ -12,16 +12,15 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.data.Diary;
-import com.wingjay.jianshi.db.DbUtil;
-import com.wingjay.jianshi.prefs.UserPrefs;
-import com.wingjay.jianshi.ui.base.BaseActivity;
+import com.wingjay.jianshi.model.Diary;
+import com.wingjay.jianshi.storage.DbUtil;
+import com.wingjay.jianshi.storage.UserPrefs;
 import com.wingjay.jianshi.ui.widget.MultipleRowTextView;
 import com.wingjay.jianshi.ui.widget.RedPointView;
 
 import butterknife.BindView;
 
-public class ViewActivity extends BaseActivity {
+public class ViewActivity extends InjectActivity {
 
     @BindView(R.id.view_edit) RedPointView edit;
     @BindView(R.id.hori_container) ScrollView verticalScrollView;

@@ -78,7 +78,7 @@
     </style>
 
     <style name="NormalBgColor">
-        <item name="android:background">@color/normal_bg</item>
+        <!--item name="android:background">@color/normal_bg</item-->
     </style>
 
     <style name="NormalBgLeftRightPadding" parent="NormalBgColor">

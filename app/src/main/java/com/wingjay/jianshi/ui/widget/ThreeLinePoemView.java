@@ -1,18 +1,13 @@
 package com.wingjay.jianshi.ui.widget;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.FrameLayout;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.global.JianShiApplication;
-import com.wingjay.jianshi.util.StringByTime;
-import com.wingjay.jianshi.util.StringUtil;
+import com.wingjay.jianshi.utils.StringByTime;
+import com.wingjay.jianshi.utils.StringUtil;
 
 /**
  * Display a three-line poem.

@@ -4,24 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.wingjay.jianshi.FullDateManager;
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.ui.base.BaseActivity;
-import com.wingjay.jianshi.ui.widget.DatePickDialogFragment;
+import com.wingjay.jianshi.ui.fragment.DatePickDialogFragment;
+import com.wingjay.jianshi.ui.fragment.DayPickDialogFragment;
 import com.wingjay.jianshi.ui.widget.DayChooser;
-import com.wingjay.jianshi.ui.widget.DayPickDialogFragment;
 import com.wingjay.jianshi.ui.widget.RedPointView;
 import com.wingjay.jianshi.ui.widget.VerticalTextView;
-import com.wingjay.jianshi.util.ConstantUtil;
-import com.wingjay.jianshi.util.DateUtil;
-import com.wingjay.jianshi.util.UpgradeUtil;
+import com.wingjay.jianshi.utils.ConstantUtil;
+import com.wingjay.jianshi.utils.DateUtil;
+import com.wingjay.jianshi.utils.FullDateUtil;
+import com.wingjay.jianshi.utils.UpgradeUtil;
 
 import org.joda.time.DateTime;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class DateChooseActivity extends BaseActivity {
+public class DateChooseActivity extends InjectActivity {
 
     private final static String YEAR = "year";
     private final static String MONTH = "month";
@@ -55,7 +54,7 @@ public class DateChooseActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 DateTime current = new DateTime(year, month, day, 0, 0);
-                long dateSeconds = FullDateManager.getDateSeconds(current);
+                long dateSeconds = FullDateUtil.getDateSeconds(current);
                 Intent i = EditActivity.createIntent(DateChooseActivity.this, dateSeconds);
                 startActivity(i);
             }
@@ -155,10 +154,10 @@ public class DateChooseActivity extends BaseActivity {
     }
 
     private void updateFullDate() {
-        FullDateManager fullDateManager = new FullDateManager();
-        yearTextView.setText(fullDateManager.getYear(year));
-        monthTextView.setText(fullDateManager.getMonth(month));
-        dayTextView.setText(fullDateManager.getDay(day));
+        FullDateUtil fullDateUtil = new FullDateUtil();
+        yearTextView.setText(fullDateUtil.getYear(year));
+        monthTextView.setText(fullDateUtil.getMonth(month));
+        dayTextView.setText(fullDateUtil.getDay(day));
     }
 
     @Override

@@ -17,7 +17,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.util.DisplayUtil;
+import com.wingjay.jianshi.utils.DisplayUtil;
 
 /**
  * Created by wingjay on 10/4/15.

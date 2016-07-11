@@ -6,8 +6,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.ui.widget.font.CustomizeTextView;
-import com.wingjay.jianshi.util.DisplayUtil;
+import com.wingjay.jianshi.utils.DisplayUtil;
 
 /**
  * Created by wingjay on 9/30/15.

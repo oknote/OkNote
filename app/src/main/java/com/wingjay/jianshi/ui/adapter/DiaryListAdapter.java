@@ -11,11 +11,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.data.Diary;
-import com.wingjay.jianshi.db.DbUtil;
+import com.wingjay.jianshi.model.Diary;
+import com.wingjay.jianshi.storage.DbUtil;
 import com.wingjay.jianshi.ui.ViewActivity;
-import com.wingjay.jianshi.ui.base.BaseActivity;
-import com.wingjay.jianshi.util.ConstantUtil;
+import com.wingjay.jianshi.ui.BaseActivity;
+import com.wingjay.jianshi.utils.ConstantUtil;
 
 import java.util.List;
 

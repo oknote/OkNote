@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.wingjay.jianshi.FullDateManager;
+import com.wingjay.jianshi.utils.FullDateUtil;
 import com.wingjay.jianshi.R;
 
 /**
@@ -36,8 +36,8 @@ public class DayChooser extends FrameLayout {
     }
 
     private void addVerticalText(VerticalTextView textView, final int day) {
-        FullDateManager fullDateManager = new FullDateManager();
-        textView.setText(fullDateManager.getPureDay(day));
+        FullDateUtil fullDateUtil = new FullDateUtil();
+        textView.setText(fullDateUtil.getPureDay(day));
         textView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {

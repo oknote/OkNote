@@ -20,7 +20,7 @@
             style="@style/DayChooserTextStyle"
             />
 
-        <com.wingjay.jianshi.ui.widget.font.CustomizeTextView
+        <com.wingjay.jianshi.ui.widget.CustomizeTextView
             android:id="@+id/max_day_unit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             />
 
 
-        <com.wingjay.jianshi.ui.widget.font.CustomizeTextView
+        <com.wingjay.jianshi.ui.widget.CustomizeTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/DayChooserUnitStyle"
@@ -74,7 +74,7 @@
             style="@style/DayChooserTextStyle"
             />
 
-        <com.wingjay.jianshi.ui.widget.font.CustomizeTextView
+        <com.wingjay.jianshi.ui.widget.CustomizeTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/DayChooserUnitStyle"

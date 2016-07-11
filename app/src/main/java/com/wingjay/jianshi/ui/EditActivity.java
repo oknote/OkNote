@@ -16,16 +16,15 @@ import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.wingjay.jianshi.R;
-import com.wingjay.jianshi.data.Diary;
-import com.wingjay.jianshi.db.DbUtil;
-import com.wingjay.jianshi.ui.base.BaseActivity;
-import com.wingjay.jianshi.util.LanguageUtil;
-import com.wingjay.jianshi.util.StringByTime;
+import com.wingjay.jianshi.model.Diary;
+import com.wingjay.jianshi.storage.DbUtil;
+import com.wingjay.jianshi.utils.LanguageUtil;
+import com.wingjay.jianshi.utils.StringByTime;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class EditActivity extends BaseActivity {
+public class EditActivity extends InjectActivity {
 
     public final static String DATE_TIME = "datetime";
     public final static String DIARY_ID = "diaryId";
